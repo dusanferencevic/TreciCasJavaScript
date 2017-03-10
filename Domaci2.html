@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Domaci 2</title>
+</head>
+<body>
+<script type="text/javascript">
+
+function daLiJePalindrom(rec) {    
+    for (var i = 0; i < rec.length / 2; i++) {
+        if (rec.charAt(i) !== rec.charAt(rec.length - 1 - i)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+if (daLiJePalindrom("11223322114")) {
+    console.log("jeste palindrom");
+} else {
+    console.log("nije palindrom");
+}
+
+</script>
+</body>
+</html>
+

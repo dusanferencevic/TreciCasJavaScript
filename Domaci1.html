@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Domaci 1</title>
+</head>
+<body>
+<script type="text/javascript">
+var cene = [5, 145, 69, 56, 13, 456, 78, 4, 30]
+var nizCenaSaPorezom = [];
+function izracunavanjePoreza(nizCena) 
+{
+	for(var i = 0 ; i < nizCena.length ; i++)
+	{
+		if (nizCena[i]<50) 
+		{
+			nizCenaSaPorezom.push(nizCena[i]+(nizCena[i]*0.18))
+		}
+		else 
+		{
+			nizCenaSaPorezom.push(nizCena[i]+(nizCena[i]*0.8))	
+		}
+	}
+	console.log(nizCenaSaPorezom);
+}
+izracunavanjePoreza(cene);
+</script>
+</body>
+</html>
